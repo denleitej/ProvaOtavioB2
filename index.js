@@ -43,10 +43,8 @@ function numeroPrimo(number) {
 
 
 
+
 // SEGUNDA QUESTÃO
-
-
-
 
 
 // Criando a validação da senha (validarSenhaPrompt())
@@ -54,27 +52,27 @@ function numeroPrimo(number) {
 // ATENÇÃO AO CHAMAR A FUNÇÃO, O CORRETO É validarSenhaPrompt() , não consegui fazer de outro jeito.
 
 function validarSenha(senha) {
-    // Verifica se a senha tem pelo menos 8 caracteres
+// Verifica se a senha tem pelo menos 8 caracteres
     if (senha.length < 8) {
       return false;
     }
   
-    // Verifica se a senha contém pelo menos uma letra maiúscula
+// Verifica se a senha contém pelo menos uma letra maiúscula
     if (!/[A-Z]/.test(senha)) {
       return false;
     }
   
-    // Verifica se a senha contém pelo menos uma letra minúscula
+// Verifica se a senha contém pelo menos uma letra minúscula
     if (!/[a-z]/.test(senha)) {
       return false;
     }
   
-    // Verifica se a senha contém pelo menos um número
+// Verifica se a senha contém pelo menos um número
     if (!/\d/.test(senha)) {
       return false;
     }
   
-    // Se todas as condições forem atendidas, a senha é válida
+// Se todas as condições forem atendidas, a senha é válida
     return true;
   }
   
@@ -88,20 +86,19 @@ function validarSenha(senha) {
     }
   }
   
-  // Exemplo de uso da função para validar uma senha
+// Exemplo de uso da função para validar uma senha
   validarSenhaPrompt();
   
-  // Exemplo de uso da função para validar outra senha
+// Exemplo de uso da função para validar outra senha
   validarSenhaPrompt();
 
-  // Agora basta chamar "validarSenhaPrompt()"
+// Agora basta chamar "validarSenhaPrompt()"
 
 
 
 
+// TERCEIRA QUESTÃO
 
-
-  // TERCEIRA QUESTÃO
 
 //Criando a função de cálculo e criando o loop para calcular
 
@@ -124,10 +121,10 @@ function calcularFatorial(numero) {
     }
   }
   
-  // Exibe os fatoriais de 1 a 10
+// Exibe os fatoriais de 1 a 10
   exibirFatoriais();
 
-  // Basta chamar "exibirFatoriais()"
+// Basta chamar "exibirFatoriais()"
 
 
 
@@ -135,30 +132,33 @@ function calcularFatorial(numero) {
 
 // QUARTA QUESTÃO
 
+
+// Criando função de prompt para digitar o número
+
 function isQuadradoPerfeito() {
     const numero = prompt("Digite um número:");
   
-    // Verificar se o número é inteiro
+// Verificar se o número é inteiro
     if (!Number.isInteger(Number(numero))) {
       console.log("O valor digitado não é um número inteiro.");
       return;
     }
   
-    // Calcular a raiz quadrada do número
+// Calcular a raiz quadrada do número
     const raiz = Math.sqrt(Number(numero));
   
-    // Verificar se a raiz quadrada é um número inteiro junto ao retorno no console caso não seja
+// Verificar se a raiz quadrada é um número inteiro junto ao retorno no console caso não seja
     if (!Number.isInteger(raiz)) {
       console.log("O número não é um quadrado perfeito.");
       return;
     }
   
-    // Mensagem se o número é um quadrado perfeito
+// Mensagem se o número é um quadrado perfeito
     console.log("O número é um quadrado perfeito.");
   }
   
-  // Chamar a função para verificar se um número é um quadrado perfeito
+// Chamar a função para verificar se um número é um quadrado perfeito
   isQuadradoPerfeito();
 
-  // Basta chamar "isQuadradoPerfeito()"
+// Basta chamar "isQuadradoPerfeito()"
 
